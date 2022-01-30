@@ -1,0 +1,80 @@
+.contact {
+	background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+	padding-top: 63px;
+	padding-bottom: 70px;
+	&-ttl {
+		color: #fff;
+		p {
+			color: #fff;
+		}
+	}
+	&-text {
+		color: #fff;
+		text-align: center;
+		margin-top: 36px;
+		margin-bottom: 44px;
+	}
+	&-form {
+		background-color: #fff;
+		padding: 30px 63px;
+		@include mq('sp') {
+			padding: 30px 45px;
+		}
+		.form-part {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+			label {
+				font-weight: bold;
+				margin-bottom: 40px;
+				span {
+					background-color: #0C449B;
+					color: #fff;
+					font-size: 14px;
+					font-weight: normal;
+					padding: 4px 16px;
+					border-radius: 10px;
+					margin-left: 20px;
+				}
+			}
+			input {
+				width: 499px;
+				height: 43px;
+				background-color: #EEFBFB;
+				@include mq('sp') {
+					width: auto;
+				}
+			}
+			textarea {
+				background-color: #EEFBFB;
+				margin-bottom: 27px;
+			}
+		}
+		.form-checks {
+			text-align: center;
+			margin-bottom: 30px;
+			input {
+				width: 20px;
+				height: 20px;
+				border: 1px solid #707070;
+				margin-right: 10px;
+			}
+			label {
+				font-weight: bold;
+				align-items: center;
+			}
+		}
+		.form-btn {
+			display: flex;
+			justify-content: center;
+			width: 155px;
+			margin: 0 auto;
+		}
+	}
+	.message {
+		display: none;
+		font-weight: bold;
+		color: red;
+		text-align: center;
+	}
+}

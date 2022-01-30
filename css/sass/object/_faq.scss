@@ -1,0 +1,25 @@
+.faq {
+	padding-top: 55px;
+	padding-bottom: 86px;
+	&-cont {
+		padding-top: 30px;
+	}
+
+	&-item {
+		font-size: 14px;
+		line-height: 1.8;
+		font-weight: bold;
+		.faq-q {
+			display: block;
+			padding: 20px 0;
+			border: 1px solid #E5E5E5;
+			text-align: center;
+			cursor: pointer;
+		}
+		.faq-a {
+			background-color: #E5E5E5;
+			border: 1px solid #E5E5E5;
+			padding: 25px 0 25px 35px;
+		}
+	}
+}

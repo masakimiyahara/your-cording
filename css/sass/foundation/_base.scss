@@ -1,0 +1,45 @@
+// レイアウト幅
+$layout-width-inner: 1045px;
+
+// ブレークポイント
+$breakpoints: (
+  "ip": "screen and (max-width: 450px)",
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (max-width: 900px)",
+  "pc": "screen and (max-width: #{$layout-width-inner})",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+
+body {
+	background-color: #fff;
+	color: #333;
+	font-family: "Noto Sans JP", sans-serif;
+}
+.noscroll {
+	overflow: hidden;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	vertical-align: bottom;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button {
+	display: block;
+}

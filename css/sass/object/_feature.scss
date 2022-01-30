@@ -1,0 +1,70 @@
+.feature {
+	padding-top: 158px;
+	&-list {
+		margin-top: 57px;
+		padding-bottom: 70px;
+		.feature-item {
+			.feature-ttl {
+				font-size: 28px;
+				font-weight: bold;
+				text-align: center;
+				padding-bottom: 60px;
+			}
+			.feature-content {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				@include mq('ip') {
+					flex-flow: column;
+				}
+				.feature-img {
+					width: 380px;
+					height: 314px;
+					@include mq('sp') {
+						width: 300px;
+						height: 234px;
+					}
+					@include mq('ip') {
+					width: 350px;
+					height: 284px;
+					margin-bottom: 20px;
+					}
+				}
+				.feature-text {
+					h3 {
+						font-size: 24px;
+						font-weight: bold;
+						line-height: 2;
+						padding-bottom: 40px;
+						@include mq('sp') {
+							font-size: 20px;
+							line-height: 1.5;
+							padding-bottom: 20px;
+						}
+					}
+					p {
+						line-height: 1.6;
+						font-weight: bold;
+						@include mq('sp') {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+			.odd {
+				padding-bottom: 86px;
+				@include mq('ip') {
+					padding-bottom: 40px;
+				}
+			}
+			.even {
+				flex-flow: row-reverse;
+				padding-bottom: 136px;
+				@include mq('ip') {
+					padding-bottom: 40px;
+					flex-flow: column;
+				}
+			}
+		}
+	}
+}

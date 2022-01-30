@@ -1,0 +1,57 @@
+.fv {
+	margin-top: 94px;
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		@include mq('sp') {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.circle {
+			position: absolute;
+			width: 850px;
+			height: 850px;
+			top: -160px;
+			right: -420px;
+			overflow: hidden;
+			z-index: -1;
+		}
+	}
+	&-copy {
+		margin-top: 160px;
+		@include mq('sp') {
+			margin-top: 60px;
+		}
+		.fv-ttl {
+			font-size: 32px;
+			font-weight: bold;
+			padding-bottom: 44px;
+			line-height: 1.5;
+			@include mq('tab') {
+				font-size: 28px;
+			}
+			@include mq('sp') {
+				font-size: 32px;
+			}
+		}
+		.fv-text {
+			font-weight: bold;
+			padding-bottom: 45px;
+			line-height: 1.5;
+		}
+	}
+	&-img {
+		padding-top: 130px;
+		width: 518px;
+		height: 430px;
+		@include mq('tab') {
+			width: 418px;
+			height: 330px;
+		}
+		@include mq('sp') {
+			padding-top: 40px;
+		}
+	}
+}

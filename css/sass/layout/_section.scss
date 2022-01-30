@@ -1,0 +1,22 @@
+.section-wrapper {
+	max-width: 1022px;
+	margin: 0 auto;
+	@include mq('pc') {
+		padding: 0 15px;
+	}
+}
+.section-ttl {
+text-align: center;
+	font-weight: bold;
+	h2 {
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+	p {
+		color: #3BA6C9;
+	}
+}
+
+.color-wrapper {
+	background-color: #EEFBFB;;
+}

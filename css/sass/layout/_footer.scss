@@ -1,0 +1,40 @@
+.footer {
+	height: 244px;
+
+	&-wrapper {
+		small {
+			display: block;
+			font-size: 16px;
+			text-align: center;
+		}
+	}
+	&-ttl {
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 43px;
+		padding-bottom: 20px;
+	}
+	.footer-nav {
+		margin-bottom: 50px;
+		.nav-list {
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			@include mq('ip') {
+				display: block;
+				text-align: center;
+			}
+			.nav-item {
+				font-weight: bold;
+			}
+			li + li {
+				margin-left: 30px;
+				@include mq('ip') {
+					margin-left: 0px;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}
